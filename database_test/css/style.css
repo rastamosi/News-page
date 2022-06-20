@@ -1,0 +1,190 @@
+body {
+    background: #edefeb;
+    font-family: Arial, sans-serif;
+
+}
+
+
+.main {
+    margin: 50px;
+    padding: 10px;
+    height: auto;
+    width: 1000px;
+    background-color: #fefffc;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: baseline;
+    height: fit-content;
+    height: 45px;
+}
+
+.page_title h1 {
+    font-weight: lighter;
+    font-size: 26px;
+    margin: 10px 10px 0 10px;
+
+}
+
+.page_title_btm h1 {
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 10px 10px 0 10px;
+
+}
+
+.title a {
+    font-size: 15px;
+    margin-left: 5px;
+
+}
+
+.title h5 {
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 12px;
+    margin: 0 5pxk 0 0;
+    color: white;
+    background-color: #832b5b;
+    border: 3px solid #832b5b;
+
+}
+
+.news_box {
+    cursor: pointer;
+}
+
+.news_container {
+    border-bottom: 3px dotted #832b5b;
+    border-top: 3px dotted #832b5b;
+    margin: 0 10px;
+    padding: 5px 0 15px 0;
+
+}
+
+.caption {
+    margin-top: 3px;
+}
+
+.caption p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 520;
+    line-height: 15px;
+}
+
+.page_num {
+    display: flex;
+    padding: 0;
+    margin: 10px;
+}
+
+
+
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(28, 1fr);
+
+}
+
+.items a {
+    display: flex;
+    font-family: monospace;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 11px;
+    color: #777777;
+    float: left;
+    padding: 3px 7px;
+    text-decoration: none;
+    background-color: #edefeb;
+    border: 1px solid #bcbdbb;
+    margin: 1px;
+}
+
+.items a.active {
+    color: white;
+
+    background-color: #832b5b;
+
+}
+
+.items a:hover:not(.active) {
+
+    color: white;
+    background-color: #b191a2;
+
+}
+
+
+.navigator {
+
+    display: flex;
+    padding: 0;
+    margin: 10px;
+}
+
+.navigator a {
+    font-size: 20px;
+}
+
+
+@media(max-width:1000px) {
+    .main {
+        width: 700px;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .items {
+        display: block;
+    }
+}
+
+@media(max-width:720px) {
+
+    .title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        align-items: center;
+        height: auto;
+        display: block;
+    }
+
+
+    .title a {
+        margin-left: 5px;
+
+    }
+
+    .title h5 {
+        margin-bottom: 5px;
+    }
+
+
+    .caption {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/*
+
+
+*{
+    overflow: hidden;
+}
